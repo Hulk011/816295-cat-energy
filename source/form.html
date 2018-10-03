@@ -7,16 +7,16 @@
 
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-      <img class="logo-image__header" src="http://placehold.it/150x100" alt="cat-energy">
-      <img class="logo-svg__header" src="http://placehold.it/150x100" alt="logo">
+      <a class="page-header__logo site-logo">
+        <img class="site-logo__logo-image" src="http://placehold.it/150x100" alt="cat-energy">
+        <img class="site-logo__logo-svg" src="http://placehold.it/150x100" alt="logo">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle">
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item--active">
+            <li class="site-list__item site-list__item--active">
               <a href="#">главная</a>
             </li>
             <li class="site-list__item">
@@ -34,15 +34,15 @@
       </nav>
     </header>
 
-    <main class="page-main-form">
-      <section class="page-main-form__form main-form">
-        <h1 class="main-form__selection program">
+    <main class="page-form">
+      <section class="page-form__form main-form">
+        <h1 class="main-form__selection-programm">
           Подбор программы
         </h2>
         <p class="main-form__questionnaire">
           заполните анкету и мы подберем программу питания для вашего кота
         </p>
-        <label class="" for="name">
+        <label class="main-form__label-name" for="name">
           имя:*
           <input class="main-form__input-name" type="text" name="name" placeholder="барсик">
         </label>
@@ -54,20 +54,20 @@
           возраст(лет):
           <input class="main-form__input-age" type="text" name="age" placeholder="7">
         </label>
-        <label class="main-form__label-losing-weight" for="losing-weight">
-          <input class="main-form__input-losing-weight" type="radio" name="losing-weight" checked>
+        <label class="main-form__losing-weight" for="losing-weight">
+          <input class="main-form__losing-weight" type="radio" name="losing-weight" checked>
           похудение
         </label>
-        <label class="main-form__label-mass-gathering" for="mass-gathering">
-          <input class="main-form__input-mass-gathering" type="radio" name="mass-gathering">
+        <label class="main-form__gathering" for="gathering">
+          <input class="main-form__gathering" type="radio" name="gathering">
           набор массы
         </label>
-        <label class="main-form__label-dont-know" for="dont-know">
-          <input class="main-form__input-dont-know" type="radio" name="dont-know">
+        <label class="main-form__dont-know" for="dont-know">
+          <input class="main-form__dont-know" type="radio" name="dont-know">
           не знаю(нужен ваш совет)
         </label>
       </section>
-      <section class="page-main-form__contacts contacts">
+      <section class="page-form__contacts contacts">
         <h2 class="contacts__contact-details">
           Контактные данные(владельца кота)
         </h2>
@@ -80,36 +80,36 @@
           <input class="contacts__input-phone" type="text" name="phone" placeholder="8 (960) 900-60-90">
         </label>
       </section>
-      <section class="page-main-form__comments comments">
+      <section class="page-form__comments comments">
         <h2 class="comments-comment">
           Комментарий
         </h2>
         <textarea class="comments__field-comment" placeholder="расскажите обо всех повадках кота">
         </textarea>
       </section>
-      <section class="page-main-form__additionally additionally">
-        <h2 class="additionally__additionally-caption">
+      <section class="page-form__yet yet">
+        <h2 class="yet__yet-caption">
           Дополнительно
         </h2>
-        <label class="additionally__label-sugar" for="sugar">
-          <input class="additionally__input-sugar" type="checkbox" name="sugar" checked>
+        <label class="yet__label-sugar" for="sugar">
+          <input class="yet__input-sugar" type="checkbox" name="sugar" checked>
           сахарозаменитель
         </label>
-        <label class="additionally__label-water" for="water">
-          <input class="additionally__input-water" type="checkbox" name="water">
+        <label class="yet__label-water" for="water">
+          <input class="yet__input-water" type="checkbox" name="water">
           питьевая вода
         </label>
-        <label class="additionally__label-milk" for="milk">
-          <input class="additionally__input-milk" type="checkbox" name="milk">
+        <label class="yet__label-milk" for="milk">
+          <input class="yet__input-milk" type="checkbox" name="milk">
           молоко
         </label>
-        <label class="additionally__label-vitamins" for="vitamins">
-          <input class="additionally__input-vitamins" type="checkbox" name="vitamins">
+        <label class="yet__label-vitamins" for="vitamins">
+          <input class="yet__input-vitamins" type="checkbox" name="vitamins">
           витамины
         </label>
       </section>
-      <button class="page-main-form__button-send-application">отправить заявку</button>
-      <p class="page-main-form__footnote">* — Обязательные поля</p>
+      <button class="page-form__application">отправить заявку</button>
+      <p class="page-form__footnote">* — Обязательные поля</p>
     </main>
 
     <footer class="page-footer">
@@ -121,23 +121,23 @@
       </p>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533248!2d30.320858716329777!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1538125528449" width="320" height="475" frameborder="0" style="border:0" allowfullscreen></iframe>
       <img class="logo-image__footer" src="http://placehold.it/150x100" alt="cat-energy logo">
-      <ul class="page-footer__social-list">
-        <li class="page-footer__social-list-item">
-          <a href="#" class="page-footer__social-link">
+      <ul class="page-footer__social social-list">
+        <li class="social-list__item">
+          <a href="#" class="social-list__social-link">
             <span class="visually-hidden">
               vkontakte
             </span>
           </a>
         </li>
-        <li class="page-footer__social-list-item">
-          <a href="#" class="page-footer__social-link">
+        <li class="social-list__item">
+          <a href="#" class="social-list__social-link">
             <span class="visually-hidden">
               instagram
             </span>
           </a>
         </li>
-        <li class="page-footer__social-list-item">
-          <a href="#" class="page-footer__social-link">
+        <li class="social-list__item">
+          <a href="#" class="social-list__social-link">
             <span class="visually-hidden">
               facebook
             </span>
