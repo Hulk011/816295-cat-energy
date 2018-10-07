@@ -1,10 +1,11 @@
 .page-header {
   &--main {
-  background-image: url("/img/index-background-mobile%401x.jpg");
-  background-repeat: no-repeat;
-  background-position: 10px 190px;
+    background-image: url("/img/index-background-mobile%401x.jpg");
+    background-repeat: no-repeat;
+    background-position: 10px 190px;
   }
 }
+
 .page-header__nutrifit-caption {
   font-family: inherit;
   font-size: 36px;
@@ -15,6 +16,7 @@
   color: #ffffff;
   font-weight: normal;
 }
+
 .page-header__nutrifit {
   font-family: inherit;
   font-size: 14px;
@@ -22,4 +24,3 @@
   text-align: center;
   color: #ffffff;
 }
-

@@ -12,27 +12,25 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 html,
 body {
-  margin: 0;
-  padding: 0;
-
   width: 280px;
   padding: 0 20px;
   margin: 0 auto;
-
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #000000;
-
   background-color: #ffffff;
 }
+
 a {
   text-decoration: none;
   color: #000000;
