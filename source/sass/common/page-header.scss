@@ -2,7 +2,7 @@
   &--main {
     background-image: url("/img/index-background-mobile%401x.jpg");
     background-repeat: no-repeat;
-    background-position: 10px 190px;
+    background-position: 0 115px;
   }
 }
 
@@ -22,5 +22,18 @@
   font-size: 14px;
   font-height: 14px;
   text-align: center;
+  color: #ffffff;
+}
+
+.page-header__search-programm {
+  background-color: #63a73a;
+  font-family: inherit;
+  font-size: 14px;
+  font-height: 18px;
+  text-transform: uppercase;
+  padding: 15px 75px;
+  box-sizing: border-box;
+  margin: auto;
+  border: none;
   color: #ffffff;
 }
