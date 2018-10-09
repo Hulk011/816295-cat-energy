@@ -1,19 +1,19 @@
 .page-catalog__product-catalog {
-  font-family: "Oswald Regular", "Arial Regular", sans-serif;
+  font-family: $regular;
   font-size: 36px;
   line-height: 60px;
   font-weight: normal;
 }
 
 .page-catalog__more-caption {
-  font-family: "Oswald Regular", "Arial Regular", sans-serif;
+  font-family: $regular;
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
 }
 
 .page-catalog__more-taste {
-  font-family: "Arial Regular", sans-serif;
+  font-family: $arial;
   font-size: 12px;
   line-height: 16px;
 }

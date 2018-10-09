@@ -5,11 +5,11 @@
 }
 
 .site-list__item {
-  font-family: "Oswald Medium", "Arial", sans-serif;
+  font-family: $medium;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  border-top: 1px solid #f2f2f2;
+  border-top: 1px solid $grey;
   text-align: center;
 }
 

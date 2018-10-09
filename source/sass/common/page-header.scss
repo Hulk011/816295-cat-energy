@@ -13,7 +13,7 @@
   line-height: 36px;
   vertical-align: middle;
   text-align: center;
-  color: #ffffff;
+  color: $f;
   font-weight: normal;
 }
 
@@ -22,11 +22,11 @@
   font-size: 14px;
   font-height: 14px;
   text-align: center;
-  color: #ffffff;
+  color: $f;
 }
 
 .page-header__search-programm {
-  background-color: #63a73a;
+  background-color: $green;
   font-family: inherit;
   font-size: 14px;
   font-height: 18px;
@@ -35,5 +35,5 @@
   box-sizing: border-box;
   margin: auto;
   border: none;
-  color: #ffffff;
+  color: $f;
 }
