@@ -1,3 +1,28 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: $regular;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: $black;
+  background-color: $f;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -13,25 +38,20 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-html,
-body {
-  width: 280px;
-  padding: 0 20px;
+.container {
+  width: 320px;
   margin: 0 auto;
-  font-family: $regular;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  color: $0;
-  background-color: $f;
-}
+  padding: 0 20px;
 
-a {
-  text-decoration: none;
-  color: $0;
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0 70px;
+  }
 }

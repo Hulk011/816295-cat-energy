@@ -3,7 +3,7 @@
   font-size: 36px;
   line-height: 60px;
   text-align: left;
-  color: $0;
+  color: $black;
   font-weight: normal;
   text-transform: none;
 }
@@ -31,7 +31,7 @@
   font-size: 24px;
   line-height: 24px;
   text-align: left;
-  color: $0;
+  color: $black;
   font-weight: normal;
   text-transform: none;
 }
@@ -39,4 +39,100 @@
 .main-form label {
   display: inline-block;
   width: 273px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.main_form__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.main_form__wrapper div {
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    min-height: 195px;
+  }
+}
+
+.target {
+  @media (min-width: $tablet-width) {
+    border: 3px solid $grey;
+  }
+}
+
+.additionally__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+.additionally__wrapper label {
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    padding: 10px;
+  }
+}
+
+.page-form__application {
+  background-color: $green;
+  font-family: inherit;
+  font-size: 14px;
+  font-height: 18px;
+  text-transform: uppercase;
+  padding: 15px 0;
+  box-sizing: border-box;
+  display: block;
+  margin: auto;
+  border: none;
+  color: $f;
+  text-align: center;
+  margin-right: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    margin: 0;
+  }
+}
+
+.page-form__footnote {
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    margin: 0;
+  }
+}
+
+.page-form__contacts div {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.textaria {
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    min-height: 175px;
+  }
 }

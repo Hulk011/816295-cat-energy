@@ -1,5 +1,9 @@
 .true-example {
   background-color: $grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: $f;
+  }
 }
 
 .true-example__caption {
@@ -13,4 +17,16 @@
   font-family: $arial;
   font-size: 14px;
   line-height: 18px;
+}
+
+.true-example__range {
+  @media (min-width: $tablet-width) {
+    background-color: $grey;
+  }
+}
+
+.true-example_main-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }

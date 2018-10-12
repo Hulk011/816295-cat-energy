@@ -5,6 +5,13 @@
 .page-footer__invite-block {
   background-color: $f;
   display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    &--grey {
+      background-color: $grey;
+    }
+  }
 }
 
 .page-footer__invite {
@@ -23,4 +30,19 @@
   font-family: $arial;
   font-size: 14px;
   line-height: 20px;
+}
+
+.page-footer iframe {
+  min-width: 280px;
+  min-height: 475px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.page-footer div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

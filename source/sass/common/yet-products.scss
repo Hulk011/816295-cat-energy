@@ -19,3 +19,28 @@
   font-size: 14px;
   line-height: 14px;
 }
+
+.yet-products__sugar,
+.yet-products__water,
+.yet-products__milk,
+.yet-products__vitamins, {
+  @media (min-width: $tablet-width) {
+    margin: 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.yet-products__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.yet-products__wrapper div {
+  @media (min-width: $desktop-width) {
+    width: 895px;
+  }
+}

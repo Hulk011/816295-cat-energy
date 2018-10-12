@@ -1,8 +1,26 @@
 .page-header {
+  position: relative;
+
   &--main {
     background-image: url("/img/index-background-mobile%401x.jpg");
     background-repeat: no-repeat;
     background-position: 0 115px;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("/img/index-background-desktop%401x.jpg");
+    background-repeat: no-repeat;
+    background-position: 600px 115px;
+  }
+}
+
+.page-header__main-background {
+  @media (min-width: $desktop-width) {
+    transform: translateX(500px);
   }
 }
 
@@ -15,6 +33,25 @@
   text-align: center;
   color: $f;
   font-weight: normal;
+  margin: 21px 6px;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    font-family: inherit;
+    font-size: 60px;
+    font-height: 60px;
+    line-height: 50px;
+    width: 425px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $black;
+    font-family: inherit;
+    font-size: 60px;
+    font-height: 60px;
+    line-height: 36px;
+  }
 }
 
 .page-header__nutrifit {
@@ -23,6 +60,11 @@
   font-height: 14px;
   text-align: center;
   color: $f;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    text-align: left;
+  }
 }
 
 .page-header__search-programm {
@@ -36,4 +78,10 @@
   margin: auto;
   border: none;
   color: $f;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 360px;
+    left: 40px;
+  }
 }
