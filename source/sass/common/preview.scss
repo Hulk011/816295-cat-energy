@@ -17,12 +17,6 @@
   }
 }
 
-.preview__wrapper {
-  @media (min-width: $desktop-width) {
-    display: flex;
-  }
-}
-
 .preview__caption {
   &--slim {
     font-family: inherit;

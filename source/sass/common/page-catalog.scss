@@ -29,6 +29,6 @@
   background-image: url("/img/gift-photo-mobile%401x.jpg");
 
   @media (min-width: $desktop-width) {
-    display: inline;
+    display: block;
   }
 }

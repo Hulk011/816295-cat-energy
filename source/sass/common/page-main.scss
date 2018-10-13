@@ -1,0 +1,5 @@
+.page-main__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
