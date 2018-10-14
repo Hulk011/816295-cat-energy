@@ -2,6 +2,10 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
 }
 
 .site-list__item {
@@ -11,6 +15,15 @@
   text-transform: uppercase;
   border-top: 1px solid $grey;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .main-nav__wrapper {

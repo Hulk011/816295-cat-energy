@@ -12,9 +12,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("/img/index-background-desktop%401x.jpg");
-    background-repeat: no-repeat;
-    background-position: 600px 115px;
+      &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      right: 0;
+      width: 600px;
+      height: 472px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(/img/index-background-desktop%401x.jpg);
+      z-index: -1;
+    }
   }
 }
 
@@ -78,10 +87,4 @@
   margin: auto;
   border: none;
   color: $f;
-
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 360px;
-    left: 40px;
-  }
 }
