@@ -1,6 +1,20 @@
 .preview {
-  background-color: #f2f2f2;
-  margin: 10px 0;
+  background-color: $grey;
+  margin: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    min-height: 370px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    min-height: 370px;
+    display: inline-block;
+    margin: 20px;
+  }
 }
 
 .preview__caption {
@@ -8,7 +22,7 @@
     font-family: inherit;
     font-size: 24px;
     line-height: 37px;
-    color: #000000;
+    color: $black;
     text-transform: uppercase;
     font-weight: normal;
     text-align: center;
@@ -18,7 +32,7 @@
     font-family: inherit;
     font-size: 24px;
     line-height: 37px;
-    color: #000000;
+    color: $black;
     text-transform: uppercase;
     font-weight: normal;
     text-align: center;
@@ -26,16 +40,30 @@
 }
 
 .preview__description {
-  font-family: "Arial Regular", sans-serif;
+  font-family: $arial;
   font-size: 14px;
   line-height: 18px;
-  color: #000000;
+  color: $black;
 }
 
 .preview__link {
   font-family: inherit;
   font-size: 16px;
   line-height: 16px;
-  color: #000000;
+  color: $black;
   text-transform: uppercase;
+}
+
+.preview div {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }

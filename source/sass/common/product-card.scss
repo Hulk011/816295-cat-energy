@@ -1,5 +1,27 @@
+.product-card {
+  @media (min-width: $tablet-width) {
+    min-width: 324px;
+    min-height: 430px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    background-color: $grey;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 245px;
+    min-height: 430px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    background-color: $grey;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .product-card__caption {
-  font-family: "Oswald Regular", "Arial Regular", sans-serif;
+  font-family: $regular;
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
@@ -7,7 +29,7 @@
 }
 
 .product-card__table {
-  font-family: "Arial Regular", sans-serif;
+  font-family: $arial;
   font-size: 12px;
   line-height: 16px;
 }
