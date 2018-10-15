@@ -1,6 +1,6 @@
 .preview {
   background-color: $grey;
-  margin: 20px 0;
+  margin: 20px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -13,7 +13,7 @@
     width: 570px;
     min-height: 370px;
     display: inline-block;
-    margin: auto;
+    margin: 20px;
   }
 }
 

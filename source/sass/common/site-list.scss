@@ -19,10 +19,29 @@
   @media (min-width: $tablet-width) {
     display: inline-block;
     border: none;
+    padding-left: 30px;
+    margin-top: 50px;
+
+    &:last-child {
+      margin-right: 30px;
+    }
   }
 
   @media (min-width: $desktop-width) {
+    display: inline-block;
+    border: none;
+    padding-left: 50px;
+    margin-top: 70px;
 
+    &:last-child {
+      margin-right: 60px;
+    }
+  }
+}
+
+.site-list__item a {
+  @media (min-width: $desktop-width) {
+    color: $f;
   }
 }
 

@@ -2,27 +2,62 @@
   position: relative;
 
   &--main {
-    background-image: url("/img/index-background-mobile%401x.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 115px;
-  }
-
-  @media (min-width: $tablet-width) {
-    background-image: none;
-  }
-
-  @media (min-width: $desktop-width) {
-      &::before {
+    &::before {
       position: absolute;
       content: "";
-      display: block;
-      right: 0;
-      width: 600px;
-      height: 472px;
+      top: 0;
+      width: 100%;
+      height: 100%;
       background-repeat: no-repeat;
       background-position: center;
-      background-image: url(/img/index-background-desktop%401x.jpg);
+      background-image: url("/img/index-background-mobile%401x.jpg");
       z-index: -1;
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: none;
+      min-height: 900px;
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 50px;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("/img/index-can-tablet%401x.jpg");
+        z-index: -1;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 720px;
+
+      &::before {
+        position: absolute;
+        content: "";
+        right: 0;
+        width: 720px;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("/img/index-background-desktop%401x.jpg");
+        z-index: -1;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 50px;
+        right: 365px;
+        width: 470px;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("/img/index-can-desktop%401x.png");
+      }
     }
   }
 }
@@ -87,4 +122,14 @@
   margin: auto;
   border: none;
   color: $f;
+}
+
+.page-header__index-can {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

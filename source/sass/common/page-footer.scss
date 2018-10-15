@@ -2,36 +2,6 @@
   background-color: $grey;
 }
 
-.page-footer__invite-block {
-  background-color: $f;
-  display: flex;
-  justify-content: space-between;
-
-  @media (min-width: $tablet-width) {
-    &--grey {
-      background-color: $grey;
-    }
-  }
-}
-
-.page-footer__invite {
-  display: block;
-  width: 96px;
-  padding: 0 25px;
-  font-family: $regular;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-}
-
-.page-footer__address {
-  display: block;
-  width: 135px;
-  font-family: $arial;
-  font-size: 14px;
-  line-height: 20px;
-}
-
 .page-footer iframe {
   min-width: 280px;
   min-height: 475px;
