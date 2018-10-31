@@ -51,8 +51,8 @@
   display: inline-block;
 
   &--color {
-  @media (min-width: $desktop-width) {
-    color: $f;
+    @media (min-width: $desktop-width) {
+      color: $f;
+    }
   }
-}
 }
