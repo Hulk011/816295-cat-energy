@@ -1,0 +1,192 @@
+.slider {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 48px;
+    background-image: linear-gradient(to top, #f2f2f2 73%, #ffffff 27%);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    background-image: none;
+  }
+}
+
+.slider__toggle {
+  padding: 0;
+  padding-left: 3px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
+    font-size: 20px;
+    color: $black;
+    border-bottom: 1px dotted #dcdcdc;
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    }
+
+    &:active {
+      border-color: transparent;
+    }
+  }
+}
+
+.slider__image {
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 690px;
+    margin-left: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: -31px;
+    left: -34px;
+    margin: 0;
+  }
+}
+
+.slider__bar {
+  display: flex;
+  width: 84px;
+  height: 14px;
+  margin: auto;
+  padding: 0 4px;
+  background-color: $f;
+  border: 1px solid #f2f2f2;
+  border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 428px;
+    height: 6px;
+    margin-top: 9px;
+    background-color: #dcdcdc;
+    border: 0;
+    border-radius: 3px;
+  }
+}
+
+.slider__controls {
+  display: flex;
+  justify-content: space-between;
+  width: 201px;
+  margin: 0 auto;
+  margin-top: 29px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 571px;
+    margin-top: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 574px;
+    margin-top: 503px;
+    margin-left: 0;
+  }
+}
+
+.slider__box:nth-child(2) {
+  display: none;
+}
+
+.slider__label {
+  width: 35px;
+  height: 6px;
+  margin: 0 auto;
+  margin-top: 3px;
+  background-color: $green;
+  border-radius: 3px;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  }
+
+  &:active {
+    border: 2px solid $green;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  &--1 {
+    @media (min-width: $tablet-width) {
+      position: relative;
+      top: -18px;
+      left: 5px;
+      width: 34px;
+      height: 34px;
+      background-color: $f;
+      border: 1px solid #dcdcdc;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+
+      &::before {
+        @media (min-width: $tablet-width) {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          display: block;
+          width: 8px;
+          height: 8px;
+          margin: auto;
+          background-color: $green;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  &--2 {
+    background-color: transparent; //переключатель для второго слайда в мабильной версии
+
+    @media (min-width: $tablet-width) {
+      position: relative;
+      top: -18px;
+      left: 5px;
+      display: none; //переключатель для второго слайда в таблет версии
+      width: 34px;
+      height: 34px;
+      background-color: $f;
+      border: 1px solid #dcdcdc;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+    }
+
+    &::before {
+      @media (min-width: $tablet-width) {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 8px;
+        height: 8px;
+        margin: auto;
+        background-color: $green;
+        border-radius: 50%;
+      }
+    }
+  }
+}

@@ -1,4 +1,8 @@
 .page-main__wrapper {
+  &:first-child {
+    margin-top: 25px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
   }

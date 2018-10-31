@@ -1,7 +1,9 @@
 .invite-block {
   background-color: $f;
-  display: flex;
-  justify-content: space-between;
+
+  &__form {
+    background-color: $grey;
+  }
 
   @media (min-width: $tablet-width) {
     &--grey {
@@ -10,14 +12,27 @@
   }
 }
 
+.invite-block div {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-around;
+  }
+}
+
 .invite-block__description {
   display: block;
-  width: 96px;
-  padding: 0 25px;
   font-family: $regular;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 150px;
+    margin-right: 50px;
+  }
 }
 
 .invite-block__address {
@@ -26,4 +41,14 @@
   font-family: $arial;
   font-size: 14px;
   line-height: 20px;
+  width: 200px;
+}
+
+.invite-block iframe {
+  width: 100%;
+  min-height: 475px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }

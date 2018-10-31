@@ -1,6 +1,60 @@
 .social-list {
   list-style: none;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+}
+
+.social-list__item {
+  width: 22px;
+  height: 22px;
+  padding-top: 3px;
+  padding-right: 39px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    height: auto;
+    padding: 0;
+    padding-right: 5px;
+    padding-left: 24px;
+  }
+}
+
+.social-list__social-icon {
+  fill: #666666;
+
+  &:hover,
+  &:focus {
+    fill: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--insta {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
+  }
 }

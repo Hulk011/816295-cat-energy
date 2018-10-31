@@ -11,27 +11,35 @@
 
   <body>
     <div class="container">
-      <header class="page-header">
-        <a href="index.html" class="page-header__logo site-logo">
-          <img src="#">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle">
+      <header class="page-header page-header--main">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
+          <a href="#" class="page-header__logo site-logo">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="main-nav__icon" src="img/logo-mobile.svg" alt="Логотип Кэт энерджи">
+            </picture>
+          </a>
+          <button type="button" class="main-nav__toggle">
+            <span class="visually-hidden">Открыть меню</span>
+            <span class="main-nav__toggle-bar main-nav__toggle-bar--top"></span>
+            <span class="main-nav__toggle-bar main-nav__toggle-bar--middle"></span>
+            <span class="main-nav__toggle-bar main-nav__toggle-bar--bottom"></span>
           </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a href="index.html">
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__link" href="index.html">
                   главная
                 </a>
               </li>
-              <li class="site-list__item site-list__item--active">
-                <a href="catalog.html">
+              <li class="site-list__item">
+                <a class="site-list__link" href="catalog.html">
                   каталог продукции
                 </a>
               </li>
               <li class="site-list__item">
-                <a href="form.html">
+                <a class="site-list__link" href="form.html">
                   подбор программы
                 </a>
               </li>
@@ -64,28 +72,31 @@
               </label>
             </div>
             <div class="target">
-              <label class="main-form__losing-weight" for="losing-weight">
-                <input class="main-form__losing-weight" type="radio" name="losing-weight" id="losing-weight" checked>
+              <label class="main-form__label-losing-weight" for="losing-weight">
+                <input class="main-form__losing-weight" type="radio" name="target" id="losing-weight" checked>
+                <span class="radio-weight"></span>
                 похудение
               </label>
-              <label class="main-form__gathering" for="gathering">
-                <input class="main-form__gathering" type="radio" name="gathering" id="gathering">
+              <label class="main-form__label-gathering" for="gathering">
+                <input class="main-form__gathering" type="radio" name="target" id="gathering">
+                <span class="radio-gathering"></span>
                 набор массы
               </label>
-              <label class="main-form__dont-know" for="dont-know">
-                <input class="main-form__dont-know" type="radio" name="dont-know" id="dont-know">
+              <label class="main-form__label-dont-know" for="dont-know">
+                <input class="main-form__dont-know" type="radio" name="target" id="dont-know">
+                <span class="radio-dont-know"></span>
                 не знаю(нужен ваш совет)
               </label>
             </div>
           </div>
           <section class="page-form__contacts contacts">
             <h2 class="contacts__contact-details">
-              Контактные данные(владельца кота)
+              Контактные данные<br>(владельца кота)
             </h2>
             <div>
               <label class="contacts__label-email" for="email">
                 e-mail:*
-                <input class="contacts_input-email" type="text" name="email" id="email" placeholder="kuklachev@gmail.com">
+                <input class="contacts__input-email" type="text" name="email" id="email" placeholder="kuklachev@gmail.com">
               </label>
               <label class="contacts__label-phone" for="phone">
                 телефон:*
@@ -97,8 +108,9 @@
             <h2 class="comments__description">
               Комментарий
             </h2>
-            <textarea class="comments__field-comment" placeholder="расскажите обо всех повадках кота">
-            </textarea>
+            <fieldset>
+            <textarea class="comments__field-comment" name="user-msg" id="user-msg" placeholder="расскажите обо всех повадках кота"></textarea>
+            </fieldset>
           </section>
           <section class="page-form__additionally additionally">
             <h2 class="additionally__additionally-caption">
@@ -107,18 +119,22 @@
             <div class="additionally__wrapper">
               <label class="additionally__label-sugar" for="sugar">
                 <input class="additionally__input-sugar" type="checkbox" name="sugar" id="sugar" checked>
+                <span class="check-sugar"></span>
                 сахарозаменитель
               </label>
               <label class="additionally__label-water" for="water">
                 <input class="additionally__input-water" type="checkbox" name="water" id="water">
+                <span class="check-water"></span>
                 питьевая вода
               </label>
               <label class="additionally__label-milk" for="milk">
                 <input class="additionally__input-milk" type="checkbox" name="milk" id="milk">
+                <span class="check-milk"></span>
                 молоко
               </label>
               <label class="additionally__label-vitamins" for="vitamins">
                 <input class="additionally__input-vitamins" type="checkbox" name="vitamins" id="vitamins">
+                <span class="check-vitamins"></span>
                 витамины
               </label>
               <button type="submit" class="page-form__application">
@@ -128,53 +144,59 @@
             </div>
           </section>
         </form>
-        <div class="invite-block invite-block--grey">
-          <p class="invite-block__description">
-            приглашаем к сотрудничеству диллеров!
-          </p>
-          <p class="invite-clock__address">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </p>
-        </div>
+        <section class="invite-block invite-block__form invite-block--grey">
+          <div>
+            <p class="invite-block__description">
+              приглашаем <br> к сотрудничеству диллеров!
+            </p>
+            <p class="invite-clock__address">
+              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            </p>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533248!2d30.320858716329777!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1538125528449" style="border:0"></iframe>
+        </section>
       </main>
 
       <footer class="page-footer">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533248!2d30.320858716329777!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1538125528449"></iframe>
-        <a href="index.html">
-          <img class="logo-image__footer" src="http://placehold.it/150x100" alt="cat-energy logo">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__logo">
+          <img class="logo-image__footer" src="img/logo-footer.svg" width="128" height="24" alt="cat-energy logo">
         </a>
         <div>
           <ul class="page-footer__social social-list">
             <li class="social-list__item">
-              <a href="#" class="social-list__link">
+              <a href="https://vk.com/htmlacademy" target="_blank" class="social-list__link">
+                <img src="img/icon-vk.svg" class="social-list__social-icon social-list__social-icon--vk" width="22" height="12">
                 <span class="visually-hidden">
                   vkontakte
                 </span>
               </a>
             </li>
             <li class="social-list__item">
-              <a href="#" class="social-list__link">
+              <a href="https://www.instagram.com/htmlacademy" target="_blank" class="social-list__link">
+                <img src="img/icon-insta.svg" class="social-list__social-icon social-list__social-icon--insta" width="16" height="16">
                 <span class="visually-hidden">
                   instagram
                 </span>
               </a>
             </li>
             <li class="social-list__item">
-              <a href="#" class="social-list__link">
+              <a href="https://www.facebook.com/htmlacademy" target="_blank" class="social-list__link">
+                <img src="img/icon-fb.svg" class="social-list__social-icon social-list__social-icon--fb" width="10" height="19">
                 <span class="visually-hidden">
                   facebook
                 </span>
               </a>
             </li>
           </ul>
-          <a href="#" class="page-footer__htmlacademy">
-            HTML Academy
-          </a>
-          <a href="#" class="page-footer__academy-logo">
-            <img src="img/htmlacademy.svg" name="htmlacademy" width="50px" height="50px">
-          </a>
         </div>
+        <div class="page-footer__copyright">
+        <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="page-footer__link">
+          <span class="page-footer__copy-text">HTML Academy</span>
+          <img src="img/htmlacademy.svg" class="page-footer__icon" width="40" height="45">
+        </a>
+      </div>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

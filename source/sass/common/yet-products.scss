@@ -1,8 +1,35 @@
+.yet-products {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: "";
+    background: #68b738;
+    height: 3px;
+    width: 100%;
+    top: 15px;
+    z-index: -1;
+  }
+}
+
 .yet-products__main-caption {
   font-family: $regular;
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  background: white;
+  margin: 0;
+  padding-right: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 45px;
+    padding-left: 15px;
+  }
 }
 
 .yet-products__caption {
@@ -20,10 +47,24 @@
   line-height: 14px;
 }
 
+.yet-products__sugar div,
+.yet-products__water div,
+.yet-products__milk div,
+.yet-products__vitamins div {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid $grey;
+}
+
+.yet-products__vitamins {
+  border-bottom: 1px solid $grey;
+  padding-bottom: 25px;
+}
+
 .yet-products__sugar,
 .yet-products__water,
 .yet-products__milk,
-.yet-products__vitamins, {
+.yet-products__vitamins {
   @media (min-width: $tablet-width) {
     margin: 30px 10px;
     display: flex;
@@ -43,4 +84,11 @@
   @media (min-width: $desktop-width) {
     width: 895px;
   }
+}
+
+.yet-products__sugar-price,
+.yet-products__water-price,
+.yet-products__milk-price,
+.yet-products__vitamins-price {
+  margin-left: 50px;
 }

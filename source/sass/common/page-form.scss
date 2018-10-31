@@ -6,6 +6,11 @@
   color: $black;
   font-weight: normal;
   text-transform: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .main-form,
@@ -22,6 +27,21 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  width: 240px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 330px;
+    margin-left: 40px;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 0;
+  }
 }
 
 .contacts__contact-details,
@@ -36,12 +56,94 @@
   text-transform: none;
 }
 
+.additionally {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: "";
+    background: #68b738;
+    height: 3px;
+    width: 100%;
+    top: 15px;
+    z-index: -1;
+  }
+}
+
+.additionally__additionally-caption {
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  background: white;
+  margin: 0;
+  padding-right: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 40px;
+  }
+}
+
+.comments {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: "";
+    background: #68b738;
+    height: 3px;
+    width: 100%;
+    top: 15px;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
+}
+
+.comments fieldset {
+  @media (min-width: $tablet-width) {
+    border: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.comments__description {
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  background: white;
+  margin: 0;
+  padding-right: 10px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 80px;
+    margin-bottom: 70px;
+  }
+}
+
 .main-form label {
   display: inline-block;
   width: 273px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -59,14 +161,22 @@
 
 .main_form__wrapper div {
   @media (min-width: $desktop-width) {
-    width: 570px;
+    width: 600px;
     min-height: 195px;
+    padding: 0;
   }
 }
 
 .target {
+  border-top: 1px solid $grey;
+  border-bottom: 1px solid $grey;
+  padding-bottom: 20px;
+
   @media (min-width: $tablet-width) {
     border: 3px solid $grey;
+    width: 650px;
+    margin-left: 43px;
+    margin-bottom: 80px;
   }
 }
 
@@ -75,6 +185,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -100,7 +211,7 @@
   background-color: $green;
   font-family: inherit;
   font-size: 14px;
-  font-height: 18px;
+  line-height: 18px;
   text-transform: uppercase;
   padding: 15px 0;
   box-sizing: border-box;
@@ -112,15 +223,29 @@
   margin-right: 10px;
 
   @media (min-width: $tablet-width) {
-    width: 300px;
+
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 200px;
+    width: none;
   }
 }
 
 .page-form__footnote {
+  text-align: center;
+  text-transform: none;
+  font-family: $arial;
+  font-size: 12px;
+
   @media (min-width: $tablet-width) {
     width: 300px;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 25px;
   }
 }
 
@@ -130,9 +255,180 @@
   }
 }
 
-.textaria {
-  @media (min-width: $desktop-width) {
-    width: 1200px;
-    min-height: 175px;
+.comments__field-comment {
+  margin-top: 20px;
+  min-height: 150px;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 150px;
+    width: 680px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    min-height: 175px;
+    margin-left: 40px;
+  }
+}
+
+
+//стили импутов
+.main-form__input-name {
+  display: inline-block;
+  width: 77%;
+  margin-left: 15px;
+  min-height: 45px;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 647px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 502px;
+  }
+}
+
+.main-form__input-weight {
+  display: inline-block;
+  width: 70%;
+  margin-left: 15px;
+  min-height: 45px;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 629px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 478px;
+  }
+}
+
+.main-form__input-age {
+  display: inline-block;
+  width: 57%;
+  margin-left: 15px;
+  min-height: 45px;
+
+  @media (min-width: $tablet-width) {
+    width: 595px;
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+  }
+}
+
+.summary {
+  padding-bottom: 20px;
+}
+
+.target input[type="radio"] {
+  display: none;
+}
+
+.main-form__label-losing-weight,
+.main-form__label-gathering,
+.main-form__label-dont-know {
+  padding: 10px 15px;
+  cursor: pointer;
+
+}
+
+.radio-weight,
+.radio-gathering,
+.radio-dont-know {
+  display: inline-block;
+  top: 9px;
+  left: -8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #b2a8a8;
+  position: relative;
+}
+
+.main-form__losing-weight + .radio-weight,
+.main-form__gathering + .radio-gathering,
+.main-form__dont-know + .radio-dont-know {
+  border-radius: 50%;
+}
+
+.target input[type="radio"] + .radio-weight::before,
+.target input[type="radio"] + .radio-gathering::before,
+.target input[type="radio"] + .radio-dont-know::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 7px;
+  width: 16px;
+  height: 16px;
+  background-color: $green;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: scale(0);
+}
+
+.target input[type="radio"]:checked + .radio-weight::before,
+.target input[type="radio"]:checked + .radio-gathering::before,
+.target input[type="radio"]:checked + .radio-dont-know::before {
+  transform: scale(1);
+}
+
+//стили импутов квадратных
+.additionally input[type="checkbox"] {
+  display: none;
+}
+
+.additionally__label-sugar,
+.additionally__label-water,
+.additionally__label-milk,
+.additionally__label-vitamins {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.additionally__label-vitamins {
+  margin-bottom: 40px;
+}
+
+.additionally__input-sugar + .check-sugar::before,
+.additionally__input-water + .check-water::before,
+.additionally__input-milk + .check-milk::before,
+.additionally__input-vitamins + .check-vitamins::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 7px;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/icon-tick.svg");
+  fill: $green;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: scale(0);
+}
+
+.additionally__input-sugar:checked + .check-sugar::before,
+.additionally__input-water:checked + .check-water::before,
+.additionally__input-milk:checked + .check-milk::before,
+.additionally__input-vitamins:checked + .check-vitamins::before {
+  transform: scale(1);
+}
+
+.check-sugar,
+.check-water,
+.check-milk,
+.check-vitamins {
+  display: inline-block;
+  top: 9px;
+  left: -8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #b2a8a8;
+  position: relative
 }
