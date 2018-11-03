@@ -18,17 +18,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: stretch;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
+  }
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
-  }
   }
 }
 

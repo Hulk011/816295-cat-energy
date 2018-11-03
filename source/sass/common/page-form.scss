@@ -59,7 +59,7 @@
 .additionally {
   position: relative;
 
-  &:before {
+  &::before {
     position: absolute;
     content: "";
     background: #68b738;
@@ -92,7 +92,7 @@
 .comments {
   position: relative;
 
-  &:before {
+  &::before {
     position: absolute;
     content: "";
     background: #68b738;
@@ -108,6 +108,9 @@
 }
 
 .comments fieldset {
+  border: none;
+  padding: 0;
+
   @media (min-width: $tablet-width) {
     border: 0;
   }
@@ -260,11 +263,6 @@
   }
 }
 
-.comments fieldset {
-  border: none;
-  padding: 0;
-}
-
 .comments__field-comment {
   text-transform: uppercase;
   margin-top: 20px;
@@ -350,7 +348,6 @@
 .main-form__label-dont-know {
   padding: 10px 15px;
   cursor: pointer;
-
 }
 
 .radio-weight,
@@ -443,5 +440,5 @@
   width: 30px;
   height: 30px;
   border: 1px solid #b2a8a8;
-  position: relative
+  position: relative;
 }

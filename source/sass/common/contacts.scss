@@ -1,7 +1,8 @@
 .contacts {
   position: relative;
+  margin-bottom: 30px;
 
-  &:before {
+  &::before {
     position: absolute;
     content: "";
     background: #68b738;
@@ -25,9 +26,9 @@
 }
 
 .contacts__input-email {
- width: 73%;
+  width: 73%;
 
- @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 635px;
     margin-bottom: 20px;
   }
@@ -46,21 +47,6 @@
 
   @media (min-width: $desktop-width) {
     width: 471px;
-  }
-}
-
-.contacts {
-  position: relative;
-  margin-bottom: 30px;
-
-  &:before {
-    position: absolute;
-    content: "";
-    background: #68b738;
-    height: 3px;
-    width: 100%;
-    top: 15px;
-    z-index: -1;
   }
 }
 

@@ -1,7 +1,16 @@
 .yet-products {
   position: relative;
 
-  &:before {
+  &__sugar-value,
+  &__water-value,
+  &__milk-value,
+  &__vitamins-value {
+    @media (min-width: $desktop-width) {
+      width: 210px;
+    }
+  }
+
+  &::before {
     position: absolute;
     content: "";
     background: #68b738;
@@ -55,17 +64,6 @@
   line-height: 14px;
 }
 
-.yet-products {
-  &__sugar-value,
-  &__water-value,
-  &__milk-value,
-  &__vitamins-value {
-    @media (min-width: $desktop-width) {
-      width: 210px
-    }
-  }
-}
-
 .yet-products__sugar div,
 .yet-products__water div,
 .yet-products__milk div,
@@ -83,7 +81,7 @@
   border-bottom: 1px solid $grey;
   padding-bottom: 25px;
 
-   @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     border-bottom: 1px solid #eeeeee;
     padding-bottom: 0;
   }
