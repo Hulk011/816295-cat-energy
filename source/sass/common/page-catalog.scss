@@ -14,6 +14,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 165px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+  }
 }
 
 .page-catalog__show-more {
@@ -23,6 +27,17 @@
   border-top: 1px solid $grey;
   border-bottom: 1px solid $grey;
   padding: 10px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 10px;
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 40px;
+    width: 245px;
+    min-height: 430px;
+  }
 }
 
 .page-catalog__show-more-link {
@@ -69,7 +84,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
+    display: flex;
+    width: 245px;
+    height: 289px;
+    margin-left: 40px;
   }
 }
 
@@ -87,6 +105,12 @@
     text-align: left;
     margin-right: 75px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    margin: 0;
+    text-align: center;
+  }
 }
 
 .additional__image {
@@ -94,6 +118,9 @@
   height: 60px;
   margin: 0 auto;
   margin-top: 65px;
-
   fill: $f;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 45px;
+  }
 }

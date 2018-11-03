@@ -2,7 +2,7 @@
 .page-catalog__more-button,
 .yet-products__button-order {
   background-color: $green;
-  font-family: inherit;
+  font-family: $regular;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -14,6 +14,11 @@
   border: none;
   color: $f;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .page-catalog__more-button {
@@ -22,5 +27,25 @@
 
    @media (min-width: $tablet-width) {
     width: 75%;
+    margin-top: 175px;
+  }
+}
+
+.product-card__button-order {
+  @media (min-width: $tablet-width) {
+   width: 249px;
+  }
+
+   @media (min-width: $desktop-width) {
+    width: 200px;
+  }
+}
+
+.yet-products__button-order {
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin: 0;
+    height: 44px;
+    padding: 12px 0;
   }
 }

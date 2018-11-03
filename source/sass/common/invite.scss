@@ -10,6 +10,10 @@
       background-color: $grey;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
 .invite-block div {
@@ -18,6 +22,14 @@
 
   @media (min-width: $tablet-width) {
     justify-content: space-around;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    background-color: $f;
+    padding: 20px;
   }
 }
 
@@ -52,3 +64,4 @@
     width: 100%;
   }
 }
+

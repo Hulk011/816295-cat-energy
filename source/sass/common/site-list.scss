@@ -25,10 +25,6 @@
     display: inline-block;
     border: none;
     padding-left: 30px;
-
-    &:last-child {
-      margin-right: 30px;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -36,7 +32,7 @@
     border: none;
     padding-left: 50px;
     font-size: 20px;
-    line-height: 24,86px;
+    line-height: 25px;
 
     &:last-child {
       margin-right: 60px;
@@ -44,15 +40,25 @@
   }
 }
 
-
-
 .site-list__link {
-  padding: 24px;
+  margin: 24px;
   display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    &--active {
+      padding-bottom: 5px;
+      border-bottom: 2px solid $green;
+    }
+  }
 
   &--color {
     @media (min-width: $desktop-width) {
       color: $f;
     }
   }
+}
+
+.site-list__link--color.site-list__link--active {
+  padding-bottom: 5px;
+  border-bottom: 2px solid $f;
 }

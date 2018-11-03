@@ -57,6 +57,7 @@
   justify-content: space-between;
   margin-bottom: 35px;
   text-align: center;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 79px;
@@ -98,7 +99,7 @@
 }
 
 .true-examples__subtitle {
-  width: 124px;
+  width: 120px;
   padding: 15px 0;
   font-size: 24px;
   line-height: 24px;
@@ -121,6 +122,7 @@
     line-height: 20px;
     text-transform: uppercase;
     border: none;
+    width: 130px;
 
     @media (min-width: $tablet-width) {
       flex-direction: column;
