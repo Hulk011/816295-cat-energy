@@ -1,3 +1,9 @@
+.how-work {
+  @media (min-width: $desktop-width) {
+    margin: 0 70px;
+  }
+}
+
 .how-work__caption {
   font-family: $regular;
   font-size: 36px;
@@ -44,6 +50,7 @@
     font-size: 16px;
     line-height: 24px;
     width: 245px;
+    margin-top: 135px;
   }
 }
 
@@ -53,9 +60,9 @@
   &::before {
     content: "";
     position: absolute;
-    width: 60px;
-    height: 60px;
-    top: 0;
+    width: 80px;
+    height: 80px;
+    top: 23px;
     background-color: $green;
     background-repeat: no-repeat;
     background-size: 50px 50px;
@@ -88,8 +95,8 @@
     &::after {
       content: counter(section);
       position: absolute;
-      right: 78px;
-      bottom: 44px;
+      right: 6px;
+      bottom: 20px;
       z-index: -1;
       font-weight: 400;
       font-size: 281px;

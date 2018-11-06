@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     background-color: $f;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: -28px;
+  }
 }
 
 .true-example__caption {
@@ -15,6 +19,11 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+    margin-bottom: 76px;
   }
 }
 
@@ -32,7 +41,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 70px;
-    margin-left: 40px;
+    margin-left: 112px;
     width: 431px;
   }
 }
@@ -66,6 +75,7 @@
   @media (min-width: $desktop-width) {
     width: 365px;
     margin-top: 70px;
+    margin-left: 111px;
   }
 }
 
@@ -91,7 +101,7 @@
     @media (min-width: $desktop-width) {
       flex-direction: row;
       width: 326px;
-      padding-top: 53px;
+      padding-top: 29px;
       text-align: start;
       margin: 0;
     }

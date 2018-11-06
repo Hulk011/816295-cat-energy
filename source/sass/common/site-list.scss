@@ -30,23 +30,22 @@
   @media (min-width: $desktop-width) {
     display: inline-block;
     border: none;
-    padding-left: 50px;
     font-size: 20px;
     line-height: 25px;
 
     &:last-child {
-      margin-right: 60px;
+      margin: 0;
+
     }
   }
 }
 
 .site-list__link {
-  margin: 24px;
   display: inline-block;
 
   @media (min-width: $tablet-width) {
     &--active {
-      padding-bottom: 5px;
+      padding-bottom: 6px;
       border-bottom: 2px solid $green;
     }
   }
@@ -55,6 +54,12 @@
     @media (min-width: $desktop-width) {
       color: $f;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 12px;
   }
 }
 

@@ -11,6 +11,11 @@
   @media (min-width: $tablet-width) {
     width: 324px;
   }
+
+   @media (min-width: $desktop-width) {
+    width: 300px;
+    margin: 6px 13px 0 1px;
+  }
 }
 
 .social-list__item {

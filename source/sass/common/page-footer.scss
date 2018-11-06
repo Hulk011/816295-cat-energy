@@ -7,6 +7,10 @@
     justify-content: space-between;
     padding: 30px 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 30px 110px;
+  }
 }
 
 .page-footer__logo {
@@ -36,6 +40,14 @@
   }
 }
 
+.page-footer__copy-text {
+  @media (min-width: $desktop-width) {
+    font-family: $arial;
+    font-size: 16px;
+    margin-right: 15px;
+  }
+}
+
 .logo-image__footer {
   padding-top: 30px;
   padding-right: 3px;
@@ -53,6 +65,10 @@
     padding-top: 9px;
     padding-right: 15px;
     padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 21px;
   }
 }
 
@@ -88,6 +104,10 @@
   @media (min-width: $tablet-width) {
     margin-top: -9px;
     margin-right: -6px;
+  }
+
+   @media (min-width: $desktop-width) {
+    padding-top: 11px;
   }
 }
 
