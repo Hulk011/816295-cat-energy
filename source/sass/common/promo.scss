@@ -42,11 +42,11 @@
       position: absolute;
       content: "";
       top: -220px;
-      right: -288px;
-      width: 100%;
+      right: 0;
+      width: 50%;
       height: 696px;
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: left;
       background-image: url("/img/index-background-desktop%401x.jpg");
       z-index: -1;
     }
@@ -55,8 +55,8 @@
       position: absolute;
       content: "";
       top: -78px;
-      right: -44px;
-      width: 100%;
+      right: 7px;
+      width: 78%;
       height: 500px;
       background-repeat: no-repeat;
       background-position: center;
