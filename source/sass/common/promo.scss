@@ -36,14 +36,15 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 263px;
-    margin-left: 144px;
+    margin-left: 72px;
+    margin-top: 102px;
 
     &::before {
       position: absolute;
       content: "";
       top: -220px;
-      right: 0;
-      width: 50%;
+      right: 0px;
+      width: 53%;
       height: 696px;
       background-repeat: no-repeat;
       background-position: left;
@@ -54,8 +55,8 @@
     &::after {
       position: absolute;
       content: "";
-      top: -78px;
-      right: 7px;
+      top: -80px;
+      right: 56px;
       width: 78%;
       height: 500px;
       background-repeat: no-repeat;

@@ -108,13 +108,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 112px;
-    margin-top: 2px;
+    width: 201px;
+    height: 64px;
   }
 }
 
 .main-nav__wrapper {
-  width: 100%;
   display: block;
-  margin: auto;
 }

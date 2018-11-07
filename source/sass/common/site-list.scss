@@ -6,6 +6,13 @@
   @media (min-width: $tablet-width) {
     text-align: right;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 481px;
+    margin-top: 22px;
+  }
 }
 
 .site-list__item {
@@ -32,11 +39,8 @@
     border: none;
     font-size: 20px;
     line-height: 25px;
-
-    &:last-child {
-      margin: 0;
-
-    }
+    padding-left: 0;
+    margin: 0;
   }
 }
 
@@ -57,13 +61,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-top: 12px;
+
   }
 }
 
 .site-list__link--color.site-list__link--active {
-  padding-bottom: 5px;
+  padding-bottom: 8px;
   border-bottom: 2px solid $f;
 }
