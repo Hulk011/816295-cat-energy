@@ -2,6 +2,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -10,13 +11,18 @@
   font-size: 36px;
   line-height: 60px;
   font-weight: normal;
+  margin-top: 13px;
+  padding-bottom: 4px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 165px;
+    font-size: 60px;
+    margin-top: 55px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 60px;
+    margin-top: 69px;
   }
 }
 
@@ -27,6 +33,7 @@
   border-top: 1px solid $grey;
   border-bottom: 1px solid $grey;
   padding: 10px 0 20px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     margin-left: 10px;
@@ -34,7 +41,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 40px;
+    margin-left: 0;
     width: 245px;
     min-height: 430px;
   }
@@ -44,10 +51,22 @@
   align-items: center;
   width: 30px;
   height: 30px;
-  margin: 27px auto 23px;
+  margin: 16px auto 10px;
   background-image: url("/img/icon-plus-mobile.svg");
   cursor: pointer;
   opacity: 0.2;
+
+  @media (min-width: $tablet-width) {
+    width: 63px;
+    height: 63px;
+    margin: 41px auto 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 63px;
+    height: 63px;
+    margin: 41px auto 23px;
+  }
 }
 
 .page-catalog__more-caption {
@@ -55,39 +74,67 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 150px;
+    margin: 25px auto 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 150px;
+    margin: 25px auto 0;
+  }
 }
 
 .page-catalog__more-taste {
   font-family: $arial;
   font-size: 12px;
   line-height: 16px;
+  margin-top: 8px;
+  margin-bottom: 21px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 18px;
+    width: 175px;
+    margin: 27px auto 0;
+  }
 }
 
 .page-catalog__gift {
   display: flex;
   flex-direction: column;
-  min-width: 280px;
+  width: 280px;
   min-height: 289px;
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin-top: 38px;
+  margin-bottom: 34px;
   background-color: $green;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 2px -350px;
   background-size: cover;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    width: 100%;
     min-height: 200px;
+    justify-content: space-between;
+    margin-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     width: 245px;
     height: 289px;
-    margin-left: 40px;
+    margin: 7px 0 0 0;
   }
 }
 
@@ -103,13 +150,15 @@
   @media (min-width: $tablet-width) {
     width: 165px;
     text-align: left;
-    margin-right: 75px;
+    margin-right: 69px;
+    margin-top: 71px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 300px;
-    margin: 0;
+    width: 191px;
+    margin: 0 auto;
     text-align: center;
+    padding: 0;
   }
 }
 
@@ -120,7 +169,12 @@
   margin-top: 65px;
   fill: $f;
 
+  @media (min-width: $tablet-width) {
+    width: 235px;
+    margin: 63px 0;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-bottom: 45px;
+    margin-bottom: 22px;
   }
 }

@@ -6,6 +6,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-top: 46px;
+
     &--grey {
       background-color: $grey;
     }
@@ -19,9 +21,12 @@
 .invite-block div {
   display: flex;
   justify-content: space-between;
+  margin: 0 19px;
+  padding-top: 12px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-around;
+    padding-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,8 +55,10 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    width: 150px;
+    width: 236px;
     margin-right: 50px;
+    font-size: 20px;
+    line-height: 25px;
   }
 
   @media (min-width: $desktop-width) {
@@ -65,7 +72,13 @@
   font-family: $arial;
   font-size: 14px;
   line-height: 20px;
-  width: 200px;
+  width: 276px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    text-align: right;
+    width: 197px;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 16px;
@@ -74,6 +87,11 @@
 }
 
 .invite-block__span {
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+    display: block;
+  }
+
   @media (min-width: $desktop-width) {
     margin-top: 20px;
     display: block;
@@ -82,10 +100,11 @@
 
 .invite-block iframe {
   width: 100%;
-  min-height: 475px;
+  min-height: 376px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    min-height: 400px;
   }
 
   @media (min-width: $desktop-width) {

@@ -4,6 +4,12 @@
   line-height: 60px;
   font-weight: normal;
   text-align: left;
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    margin-bottom: 49px;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 60px;
@@ -20,11 +26,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 633px;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
+    width: 1220px;
   }
 }
 
@@ -37,9 +45,12 @@
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    width: 215px;
-    margin-top: 80px;
+    width: 257px;
+    margin-top: 133px;
     margin-left: 0;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 111px;
   }
 
   @media (min-width: $desktop-width) {
@@ -56,9 +67,9 @@
   &::before {
     content: "";
     position: absolute;
-    width: 80px;
-    height: 80px;
-    top: 23px;
+    width: 60px;
+    height: 60px;
+    top: -3px;
     background-color: $green;
     background-repeat: no-repeat;
     background-size: 50px 50px;
@@ -82,11 +93,23 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 350px;
+    width: 250px;
     position: relative;
     min-height: 283px;
     margin-bottom: 0;
     counter-increment: section;
+
+    &::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 23px;
+    background-color: $green;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: center;
+  }
 
     &::after {
       content: counter(section);

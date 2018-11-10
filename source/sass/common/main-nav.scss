@@ -59,7 +59,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 45px;
+    margin-top: 24px;
     display: flex;
     justify-content: space-between;
     font-weight: 400;
@@ -100,11 +100,11 @@
 
 .main-nav__icon {
   width: 190px;
-  height: 62px;
+  height: 64px;
 
   @media (min-width: $tablet-width) {
-    width: 200px;
-    height: 72px;
+    width: 173px;
+    height: 58px;
   }
 
   @media (min-width: $desktop-width) {
@@ -115,4 +115,16 @@
 
 .main-nav__wrapper {
   display: block;
+}
+
+.page-header {
+  border-bottom: 1px solid $grey;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
 }

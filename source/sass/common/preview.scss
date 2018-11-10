@@ -5,13 +5,14 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: 708px;
     min-height: 370px;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,13 +34,15 @@
     text-transform: uppercase;
     font-weight: normal;
     text-align: center;
-    margin-left: 50px;
+    margin-left: 11px;
+    margin-top: 29px;
+    margin-bottom: 30px;
 
     &::before {
       content: "";
       position: absolute;
-      top: 0;
-      right: 170px;
+      top: -6px;
+      right: 188px;
       width: 50px;
       height: 50px;
       border-radius: 50%;
@@ -50,8 +53,8 @@
     &::after {
       content: "";
       position: absolute;
-      top: -7px;
-      right: 168px;
+      top: -9px;
+      right: 188px;
       width: 50px;
       height: 50px;
       background-image: url("../img/icon-cat-slim.svg");
@@ -69,13 +72,15 @@
     text-transform: uppercase;
     font-weight: normal;
     text-align: center;
-    margin-left: 60px;
+    margin-left: 39px;
+    margin-top: 29px;
+    margin-bottom: 30px;
 
     &::before {
       content: "";
       position: absolute;
-      top: 0;
-      right: 170px;
+      top: -7px;
+      right: 188px;
       width: 50px;
       height: 50px;
       border-radius: 50%;
@@ -86,12 +91,12 @@
     &::after {
       content: "";
       position: absolute;
-      top: -7px;
-      right: 161px;
+      top: -16px;
+      right: 174px;
       width: 80px;
       height: 70px;
       background-image: url("../img/icon-cat-pro.svg");
-      background-size: 65px 28px;
+      background-size: 69px 28px;
       background-repeat: no-repeat;
       background-position: center;
     }
@@ -108,7 +113,7 @@
         content: "";
         position: absolute;
         top: 15px;
-        right: 100px;
+        right: 63px;
         width: 200px;
         height: 200px;
         border-radius: 50%;
@@ -119,8 +124,8 @@
       &::after {
         content: "";
         position: absolute;
-        top: -3px;
-        right: 91px;
+        top: -15px;
+        right: 48px;
         width: 230px;
         height: 230px;
         background-image: url("../img/icon-cat-slim.svg");
@@ -135,7 +140,7 @@
         content: "";
         position: absolute;
         top: 15px;
-        right: 100px;
+        right: 61px;
         width: 200px;
         height: 200px;
         border-radius: 50%;
@@ -146,12 +151,12 @@
       &::after {
         content: "";
         position: absolute;
-        top: -3px;
-        right: 91px;
-        width: 230px;
-        height: 230px;
+        top: -8px;
+        right: 30px;
+        width: 270px;
+        height: 250px;
         background-image: url("../img/icon-cat-pro.svg");
-        background-size: 230px 230px;
+        background-size: 269px 250px;
         background-repeat: no-repeat;
         background-position: center;
       }
@@ -229,15 +234,25 @@
   font-size: 14px;
   line-height: 18px;
   color: $black;
-  width: 230px;
+  width: 240px;
   border-bottom: 1px solid #c6bbbb;
-  padding-bottom: 20px;
+  padding-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    width: 380px;
     border: none;
+    margin-top: 25px;
+
+    &--description-slim {
+      width: 380px;
+      margin-bottom: 35px;
+    }
+
+    &--description-pro {
+      width: 341px;
+      padding-bottom: 41px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -269,6 +284,13 @@
 }
 
 .svg-turn {
+  vertical-align: middle;
+  margin-left: 7px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 17px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-left: 17px;
   }

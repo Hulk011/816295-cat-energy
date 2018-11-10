@@ -1,13 +1,13 @@
 .promo {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 33px;
 
   &::before {
     position: absolute;
     content: "";
-    top: -95px;
-    right: -21px;
-    width: 115%;
+    top: -96px;
+    right: 0px;
+    width: 320px;
     height: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -17,16 +17,20 @@
 
   @media (min-width: $tablet-width) {
     background-image: none;
+    margin-left: 82px;
+    margin-bottom: 530px;
 
-    margin-left: 90px;
+    &::before {
+    display: none;
+  }
 
     &::after {
       position: absolute;
       content: "";
-      top: 50px;
-      right: 0;
-      width: 100%;
-      height: 100%;
+      top: 194px;
+      right: 77px;
+      width: 617px;
+      height: 620px;
       background-repeat: no-repeat;
       background-position: center;
       background-image: url("/img/index-can-tablet%401x.jpg");
@@ -40,6 +44,7 @@
     margin-top: 102px;
 
     &::before {
+      display: block;
       position: absolute;
       content: "";
       top: -220px;
@@ -74,7 +79,7 @@
   text-align: center;
   color: $f;
   font-weight: normal;
-  margin: 27px 6px 16px 6px;
+  margin: 27px 6px 23px 6px;
 
   @media (min-width: $tablet-width) {
     color: $black;
@@ -83,6 +88,7 @@
     line-height: 60px;
     width: 425px;
     text-align: left;
+    margin-top: 55px;
   }
 
   @media (min-width: $desktop-width) {
@@ -108,7 +114,8 @@
     text-align: left;
     font-size: 20px;
     line-height: 20px;
-    margin-top: 40px;
+    margin-top: 42px;
+    margin-left: 6px
   }
 
   @media (min-width: $desktop-width) {
@@ -130,12 +137,12 @@
   color: $f;
 
   @media (min-width: $tablet-width) {
-    font-size: 14px;
+    font-size: 20px;
     line-height: 18px;
-    padding: 15px 25px;
-    box-sizing: border-box;
-    margin-top: 30px;
+    padding: 17px 26px;
+    margin-top: 27px;
     display: inline-block;
+    margin-left: 6px;
   }
 
   @media (min-width: $desktop-width) {
@@ -148,7 +155,8 @@
 }
 
 .promo__index-can {
-  margin-top: 10px;
+  margin-top: 16px;
+  margin-bottom: 7px;
 
   @media (min-width: $tablet-width) {
     display: none;
