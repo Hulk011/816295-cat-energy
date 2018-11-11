@@ -1,8 +1,91 @@
+.yet-products {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: #68b738;
+    height: 3px;
+    width: 100%;
+    top: 14px;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+    position: absolute;
+    content: "";
+    background: #68b738;
+    height: 3px;
+    width: 100%;
+    top: 22px;
+    z-index: -1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 86px;
+
+    &::before {
+    position: absolute;
+    content: "";
+    background: #68b738;
+    height: 3px;
+    width: 100%;
+    top: 22px;
+    z-index: -1;
+    }
+  }
+
+  &__sugar-value,
+  &__water-value,
+  &__milk-value,
+  &__vitamins-value {
+    @media (min-width: $tablet-width) {
+    width: 155px;
+      font-family: $arial;
+      font-size: 16px;
+      text-align: right;
+  }
+
+    @media (min-width: $desktop-width) {
+      width: 155px;
+      font-family: $arial;
+      font-size: 16px;
+      margin: 21px 0 0 0;
+    }
+  }
+}
+
 .yet-products__main-caption {
   font-family: $regular;
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  background: white;
+  margin: 0;
+  padding-right: 22px;
+  padding-left: 20px;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 27px;
+    padding-left: 39px;
+    padding-right: 37px;
+    margin-bottom: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
+    margin-left: 0;
+    padding-right: 35px;
+    padding-left: 40px;
+  }
 }
 
 .yet-products__caption {
@@ -11,24 +94,71 @@
   line-height: 16px;
   font-weight: normal;
   text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 16px;
+  border-top: 1px solid $grey;
+
+  @media (min-width: $tablet-width) {
+    width: 130px;
+    font-size: 20px;
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 290px;
+    font-size: 20px;
+  }
 }
 
-.yet-products__value,
-.yet-products__price {
+.yet-products__sugar div,
+.yet-products__water div,
+.yet-products__milk div,
+.yet-products__vitamins div {
   font-family: $arial;
   font-size: 14px;
-  line-height: 14px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    margin-top: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-top: none;
+    width: 291px;
+  }
+}
+
+.yet-products__vitamins {
+  border-bottom: 1px solid $grey;
+  padding-bottom: 19px;
+
+  @media (min-width: $desktop-width) {
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 7px;
+  }
 }
 
 .yet-products__sugar,
 .yet-products__water,
 .yet-products__milk,
-.yet-products__vitamins, {
+.yet-products__vitamins {
+  margin-bottom: 15px;
+
   @media (min-width: $tablet-width) {
-    margin: 30px 10px;
+    margin: 30px 37px 35px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    border-top: 1px solid #eeeeee;
+    padding-top: 6px;
+    margin: 9px 2px 0;
   }
 }
 
@@ -39,8 +169,49 @@
   }
 }
 
-.yet-products__wrapper div {
+.yet-products__sugar-price,
+.yet-products__water-price,
+.yet-products__milk-price,
+.yet-products__vitamins-price {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    font-family: $arial;
+    font-size: 16px;
+  }
+
   @media (min-width: $desktop-width) {
-    width: 895px;
+    margin-left: 50px;
+    font-family: $arial;
+    font-size: 16px;
+    margin: 21px 0 0 0;
+    width: 48px;
+    text-align: left;
+  }
+}
+
+.yet-products__sugar-value,
+.yet-products__water-value,
+.yet-products__milk-value,
+.yet-products__vitamins-value {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.yet-products__water-price {
+  @media (min-width: $desktop-width) {
+    margin-left: 86px;
+  }
+}
+
+.yet-product__container {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 896px;
+    margin-right: 79px;
   }
 }

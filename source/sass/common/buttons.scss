@@ -1,11 +1,10 @@
 .product-card__button-order,
 .page-catalog__more-button,
-.yet-products__button-order,
-.page-form__application {
+.yet-products__button-order {
   background-color: $green;
-  font-family: inherit;
+  font-family: $regular;
   font-size: 14px;
-  font-height: 18px;
+  line-height: 18px;
   text-transform: uppercase;
   width: 100%;
   padding: 15px 0;
@@ -15,5 +14,62 @@
   border: none;
   color: $f;
   text-align: center;
-  margin-right: 10px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.page-catalog__more-button {
+  background-color: $grey;
+  color: #7e7e7e;
+  font-size: 16px;
+  padding: 11px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    margin: 109px auto 0;
+    padding: 11px 0;
+    font-size: 16px;
+  }
+}
+
+.product-card__button-order {
+  margin-top: -3px;
+  font-size: 16px;
+  padding: 10px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 249px;
+    margin-top: 0;
+    margin-bottom: 39px;
+    font-size: 16px;
+    padding: 12px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+    margin-bottom: 39px;
+    padding: 11px 0;
+  }
+}
+
+.yet-products__button-order {
+  width: 280px;
+  font-size: 16px;
+  padding: 11px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+    margin: 7px 0 0 0;
+    height: 41px;
+    padding: 12px 2px;
+  }
 }

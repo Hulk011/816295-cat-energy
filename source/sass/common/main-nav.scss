@@ -1,13 +1,130 @@
 .main-nav {
   list-style: none;
+  position: relative;
+
+  &--closed,
+  &--opened {
+    .main-nav__toggle-bar {
+      position: absolute;
+      width: 24px;
+      height: 2px;
+      background-color: $black;
+      transform: rotate(0deg);
+      transition: transform 0.25s ease-in-out;
+    }
+  }
+
+  &--opened {
+    .main-nav__toggle-bar {
+      &--top {
+        transform: rotate(45deg);
+      }
+
+      &--middle {
+        width: 0;
+        opacity: 0;
+      }
+
+      &--bottom {
+        transform: rotate(-45deg);
+      }
+    }
+
+    .main-nav__wrapper {
+      display: block;
+    }
+  }
+
+  &--closed {
+    .main-nav__toggle-bar {
+      &--top {
+        top: 10px;
+        transform-origin: left center;
+      }
+
+      &--middle {
+        top: 18px;
+        transform-origin: left center;
+      }
+
+      &--bottom {
+        top: 26px;
+        transform-origin: left center;
+      }
+    }
+
+    .main-nav__wrapper {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: $black;
+
+    .main-nav__wrapper {
+      display: block;
+    }
+  }
 }
 
 .main-nav__toggle {
+  position: absolute;
+  top: 13px;
+  right: -3px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  padding: 15px;
+  background-color: transparent;
+  border: 0;
+  transform: rotate(0deg);
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
 
   @media (min-width: $desktop-width) {
     display: none;
+  }
+}
+
+.main-nav__icon {
+  width: 190px;
+  height: 64px;
+
+  @media (min-width: $tablet-width) {
+    width: 173px;
+    height: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 201px;
+    height: 64px;
+  }
+}
+
+.main-nav__wrapper {
+  display: block;
+}
+
+.page-header {
+  border-bottom: 1px solid $grey;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
   }
 }
