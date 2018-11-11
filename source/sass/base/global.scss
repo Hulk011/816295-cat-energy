@@ -44,16 +44,16 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  max-width: 320px;
+  width: 320px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    max-width: 768px;
+    width: 768px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1300px;
+    width: 1300px;
     margin: 0 auto;
   }
 }

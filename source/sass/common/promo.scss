@@ -6,13 +6,17 @@
     position: absolute;
     content: "";
     top: -96px;
-    right: 0px;
+    right: 0;
     width: 320px;
     height: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("/img/index-background-mobile%401x.jpg");
     z-index: -1;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/index-background-mobile@2x.jpg");
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -21,8 +25,8 @@
     margin-bottom: 530px;
 
     &::before {
-    display: none;
-  }
+      display: none;
+    }
 
     &::after {
       position: absolute;
@@ -35,6 +39,10 @@
       background-position: center;
       background-image: url("/img/index-can-tablet%401x.jpg");
       z-index: -1;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("img/index-can-tablet@2x.jpg");
+      }
     }
   }
 
@@ -48,13 +56,18 @@
       position: absolute;
       content: "";
       top: -220px;
-      right: 0px;
+      right: 0;
       width: 53%;
       height: 696px;
       background-repeat: no-repeat;
-      background-position: left;
       background-image: url("/img/index-background-desktop%401x.jpg");
+      background-size: 720px 696px, 100% 696px;
+      background-position: right top, left top;
       z-index: -1;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/index-background-desktop@2x.jpg");
+    }
     }
 
     &::after {
@@ -67,6 +80,10 @@
       background-repeat: no-repeat;
       background-position: center;
       background-image: url("/img/index-can-desktop%401x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/index-can-desktop@02x.png");
+    }
     }
   }
 }
@@ -115,7 +132,7 @@
     font-size: 20px;
     line-height: 20px;
     margin-top: 42px;
-    margin-left: 6px
+    margin-left: 6px;
   }
 
   @media (min-width: $desktop-width) {
@@ -149,7 +166,7 @@
     font-size: 20px;
     line-height: 20px;
     margin-left: 6px;
-    margin-top: 34px;
+    margin-top: 32px;
     padding: 15px 27px;
   }
 }

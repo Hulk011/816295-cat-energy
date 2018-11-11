@@ -246,18 +246,26 @@
 
     &--description-slim {
       width: 380px;
-      margin-bottom: 35px;
+      margin-bottom: 30px;
     }
 
     &--description-pro {
       width: 341px;
-      padding-bottom: 41px;
+      padding-bottom: 39px;
     }
   }
 
   @media (min-width: $desktop-width) {
     width: 492px;
     margin-bottom: 10px;
+
+    &--description-slim {
+      margin-bottom: 6px;
+    }
+
+    &--description-pro {
+      padding-bottom: 19px;
+    }
   }
 }
 
@@ -294,5 +302,4 @@
   @media (min-width: $desktop-width) {
     margin-left: 17px;
   }
-
 }
