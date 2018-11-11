@@ -16,14 +16,14 @@
     margin-bottom: 55px;
 
     &::before {
-    position: absolute;
-    content: "";
-    background: #68b738;
-    height: 3px;
-    width: 100%;
-    top: 22px;
-    z-index: -1;
-  }
+      position: absolute;
+      content: "";
+      background: #68b738;
+      height: 3px;
+      width: 100%;
+      top: 22px;
+      z-index: -1;
+    }
 
     & div {
       display: flex;
@@ -55,7 +55,7 @@
   margin-left: 7px;
   min-height: 40px;
   margin-bottom: 10px;
-  margin-top: 0px;
+  margin-top: 0;
   padding-left: 12px;
   text-transform: uppercase;
   width: 203px;
@@ -88,7 +88,6 @@
 
   @media (min-width: $tablet-width) {
     width: 464px;
-    margin-left: 10px;
     padding-left: 17px;
     margin-left: 11px;
     min-height: 47px;
@@ -128,8 +127,7 @@
     padding-right: 40px;
     margin-bottom: 72px;
     padding-left: 38px;
-    margin-left: 0px;
-
+    margin-left: 0;
   }
 }
 

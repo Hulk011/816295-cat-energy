@@ -101,16 +101,16 @@
     counter-increment: section;
 
     &::before {
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    top: 23px;
-    background-color: $green;
-    background-repeat: no-repeat;
-    background-size: 50px 50px;
-    background-position: center;
-  }
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      top: 23px;
+      background-color: $green;
+      background-repeat: no-repeat;
+      background-size: 50px 50px;
+      background-position: center;
+    }
 
     &::after {
       content: counter(section);

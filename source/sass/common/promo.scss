@@ -6,7 +6,7 @@
     position: absolute;
     content: "";
     top: -96px;
-    right: 0px;
+    right: 0;
     width: 320px;
     height: 100%;
     background-repeat: no-repeat;
@@ -21,8 +21,8 @@
     margin-bottom: 530px;
 
     &::before {
-    display: none;
-  }
+      display: none;
+    }
 
     &::after {
       position: absolute;
@@ -48,12 +48,13 @@
       position: absolute;
       content: "";
       top: -220px;
-      right: 0px;
+      right: 0;
       width: 53%;
       height: 696px;
       background-repeat: no-repeat;
-      background-position: left;
       background-image: url("/img/index-background-desktop%401x.jpg");
+      background-size: 720px 696px, 100% 696px;
+      background-position: right top, left top;
       z-index: -1;
     }
 
@@ -115,7 +116,7 @@
     font-size: 20px;
     line-height: 20px;
     margin-top: 42px;
-    margin-left: 6px
+    margin-left: 6px;
   }
 
   @media (min-width: $desktop-width) {
