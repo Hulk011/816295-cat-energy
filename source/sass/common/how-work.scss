@@ -9,11 +9,12 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     margin-bottom: 49px;
+    margin-top: 49px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 60px;
-    margin-top: 65px;
+    margin-top: 56px;
     margin-bottom: 48px;
   }
 }
@@ -127,5 +128,53 @@
   @media (min-width: $desktop-width) {
     width: 245px;
     text-align: left;
+
+    &:nth-child(1)::after {
+      content: counter(section);
+      position: absolute;
+      right: 16px;
+      bottom: 55px;
+      z-index: -1;
+      font-weight: 400;
+      font-size: 281px;
+      line-height: 281.07px;
+      color: #f2f2f2;
+    }
+
+    &:nth-child(2)::after {
+      content: counter(section);
+      position: absolute;
+      right: 1px;
+      bottom: 52px;
+      z-index: -1;
+      font-weight: 400;
+      font-size: 281px;
+      line-height: 281.07px;
+      color: #f2f2f2;
+    }
+
+    &:nth-child(3)::after {
+      content: counter(section);
+      position: absolute;
+      right: -1px;
+      bottom: 51px;
+      z-index: -1;
+      font-weight: 400;
+      font-size: 281px;
+      line-height: 281.07px;
+      color: #f2f2f2;
+    }
+
+    &:nth-child(4)::after {
+      content: counter(section);
+      position: absolute;
+      right: -4px;
+      bottom: 54px;
+      z-index: -1;
+      font-weight: 400;
+      font-size: 281px;
+      line-height: 281.07px;
+      color: #f2f2f2;
+    }
   }
 }

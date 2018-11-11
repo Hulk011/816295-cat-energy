@@ -24,7 +24,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 86px;
+    margin-bottom: 17px;
 
     &::before {
     position: absolute;
@@ -77,11 +77,11 @@
     margin-left: 27px;
     padding-left: 39px;
     padding-right: 37px;
-    margin-bottom: 59px;
+    margin-bottom: 78px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 72px;
+    margin-bottom: 60px;
     margin-left: 0;
     padding-right: 35px;
     padding-left: 40px;
@@ -102,12 +102,15 @@
   @media (min-width: $tablet-width) {
     width: 130px;
     font-size: 20px;
-    margin-bottom: 26px;
+    margin-bottom: 28px;
+    border: none;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 290px;
     font-size: 20px;
+    margin-bottom: 0;
   }
 }
 
@@ -122,12 +125,13 @@
 
   @media (min-width: $tablet-width) {
     width: 250px;
-    margin-top: 4px;
+    margin-top: 2px;
   }
 
   @media (min-width: $desktop-width) {
     border-top: none;
     width: 291px;
+    margin-top: 7px;
   }
 }
 
@@ -148,17 +152,22 @@
   margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
-    margin: 30px 37px 35px;
+    padding: 30px 37px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border: 1px solid $grey;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    border-top: 1px solid #eeeeee;
-    padding-top: 6px;
-    margin: 9px 2px 0;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    border: 0;
+    border-top: 1px solid $grey;
   }
 }
 
@@ -179,13 +188,15 @@
   @media (min-width: $tablet-width) {
     font-family: $arial;
     font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 50px;
     font-family: $arial;
     font-size: 16px;
-    margin: 21px 0 0 0;
+    margin: 0;
     width: 48px;
     text-align: left;
   }
@@ -197,6 +208,15 @@
 .yet-products__vitamins-value {
   margin-top: 10px;
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .yet-products__water-price {
@@ -213,5 +233,6 @@
   @media (min-width: $desktop-width) {
     width: 896px;
     margin-right: 79px;
+    margin-top: 19px;
   }
 }
